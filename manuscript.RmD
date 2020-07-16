@@ -21,17 +21,17 @@ classoption       : "man"
 # to compile as pdf
 # (a) move file "_site.yml" to folder "tmp"
 # (b) uncomment the following lines
-output            : papaja::apa6_pdf
-header-includes:
-  - \setlength{\parskip}{0em}
-  - \raggedbottom
-  - \note{\clearpage}
-# output:
-#   html_document:
-#     toc: TRUE
-#     toc_float:
-#       collapsed: FALSE
-#     toc_depth: 2
+# output            : papaja::apa6_pdf
+# header-includes:
+#   - \setlength{\parskip}{0em}
+#   - \raggedbottom
+#   - \note{\clearpage}
+output:
+  html_document:
+    toc: TRUE
+    toc_float:
+      collapsed: FALSE
+    toc_depth: 2
 ---
 
 ```{r include=F}
@@ -61,7 +61,7 @@ r_citations <- cite_r("bibliography/r-references.bib"
 load("data/workspace.rData")
 ```
 
-<!-- # Introduction -->
+# Introduction
 
 Understanding why people disclose personal information online remains a critical question for both society and research. 
 Originally, it was assumed that online self-disclosure is erratic and that it cannot be predicted by people's personal beliefs, concerns, or standpoints. 
